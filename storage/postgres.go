@@ -16,6 +16,8 @@ type Config struct {
 	SslMode  string
 }
 
+// abrir conexion con los datos del env
+
 func NewConnection(config *Config) (*gorm.DB, error) {
 
 	dsn := fmt.Sprintf(
